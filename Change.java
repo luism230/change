@@ -9,7 +9,6 @@ public class Change {
 		int number_of_ways = 0;
 		if(cents == 0)
 		{
-			System.out.println("1");
 			return 1 ;
 		}
 		else if(cents > 0)
@@ -18,8 +17,6 @@ public class Change {
 			
 			for (int i = start; i < coins.length; i++)
 			{
-				System.out.println(cents + "cents");
-				System.out.println(coins[i] + "coins");
 				if(i ==3)
 				{
 					number_of_ways++;
@@ -32,7 +29,6 @@ public class Change {
 		}
 		else if (cents < 0)
 		{
-			System.out.println("0");
 			return 0;
 		}
 		return number_of_ways;
